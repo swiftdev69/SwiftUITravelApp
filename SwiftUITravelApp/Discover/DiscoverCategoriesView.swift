@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-struct Category: Hashable {
-    let name, imageName: String
-}
-
 struct DiscoverCategoriesView: View {
     let categories: [Category] = [
         .init(name: "Art", imageName: "paintpalette.fill"),
@@ -26,13 +22,14 @@ struct DiscoverCategoriesView: View {
                 ForEach(categories, id: \.self){ category in
                     VStack(spacing: 8) {
                         Image(systemName: category.imageName)
-                            .foregroundColor(.white)
+                            .foregroundColor(Color.orange)
                             .frame(width: 64, height: 64)
-                            .background(Color.gray)
+                            .background(Color.white)
                             .cornerRadius(64)
                             .shadow(color: .gray, radius: 4,x: 0.0, y: 2)
                         Text(category.name)
                             .font(.system(size: 12,weight: .semibold))
+                            .foregroundColor(.white)
                     }.frame(width: 68)
                 }
             }.padding(.horizontal)
@@ -40,7 +37,9 @@ struct DiscoverCategoriesView: View {
     }
 }
 
-
-//#Preview {
-//    DiscoverCategoriesView()
-//}
+struct DiscoverCategoriesView_Previews: PreviewProvider {
+    static var previews: some View {
+        DiscoverCategoriesView()
+        DiscoverView()
+    }
+}

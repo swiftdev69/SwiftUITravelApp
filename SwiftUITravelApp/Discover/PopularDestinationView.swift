@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-struct Destination: Hashable {
-    let name, country, imageName: String
-}
-
 struct PopularDestinationView : View{
     
     let destinations: [Destination] = [
@@ -18,6 +14,7 @@ struct PopularDestinationView : View{
         .init(name: "Tokyo", country: "Japan", imageName: "japan"),
         .init(name: "New York", country: "US", imageName: "new_york")
     ]
+    
     var body: some View{
         VStack {
             HStack {
@@ -51,15 +48,19 @@ struct PopularDestinationView : View{
                                 .padding(.bottom, 8)
                                 .foregroundColor(.gray)
                         }
-//                        .frame(width: 125)
-                        .background(Color(.init(white: 0.9, alpha: 1)))
-                        .cornerRadius(5)
-                        .shadow(color: .gray, radius: 4,x: 0.0, y: 2)
+                        .asTile()
                         .padding(.bottom)
                         
                     }
                 }.padding(.horizontal)
             }
         }
+    }
+}
+
+struct PopularDestinationView_Previews: PreviewProvider {
+    static var previews: some View {
+        PopularDestinationView()
+        DiscoverView()
     }
 }

@@ -1,38 +1,11 @@
 //
-//  ContentView.swift
+//  TrendingCreators.swift
 //  SwiftUITravelApp
 //
 //  Created by Sandeep Maurya on 04/11/23.
 //
 
 import SwiftUI
-
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
-            
-            ScrollView{
-                //Top Category
-                DiscoverCategoriesView()
-                
-                // Destinations
-                PopularDestinationView()
-                
-                //Restaurants
-                PopularRestaurantsView()
-                
-                //Creators
-                TrendingCreators()
-                
-            }
-            .navigationTitle("Discover")
-        }
-    }
-}
-
-struct User: Hashable {
-    let name, imageName: String
-}
 
 struct TrendingCreators: View {
     
@@ -67,7 +40,6 @@ struct TrendingCreators: View {
                         .frame(width: 60)
                         .shadow(color: .gray, radius: 4,x: 0.0, y: 2)
                         .padding(.bottom)
-                        
                     }
                 }.padding(.horizontal)
             }
@@ -75,8 +47,9 @@ struct TrendingCreators: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TrendingCreators_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TrendingCreators()
+        DiscoverView()
     }
 }

@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-struct Restaurant: Hashable{
-    let name, imageName: String
-}
-
 struct PopularRestaurantsView : View{
     
     let restaurants: [Restaurant] = [
@@ -44,7 +40,7 @@ struct PopularRestaurantsView : View{
                                 HStack{
                                     Text(restaurant.name)
                                     Spacer()
-//
+                                    //
                                     Button {
                                         // action goes here
                                     } label: {
@@ -59,20 +55,25 @@ struct PopularRestaurantsView : View{
                                 }
                                 
                                 Text("Japan's Finest Tapas")
-                                  
+                                
                             }.font(.system(size: 12, weight: .semibold))
                             
                             Spacer()
                         }
                         .frame(width: 240)
-                        .background(Color(.init(white: 0.9, alpha: 1)))
-                        .cornerRadius(5)
-                        .shadow(color: .gray, radius: 4,x: 0.0, y: 2)
+                        .asTile()
                         .padding(.bottom)
                         
                     }
                 }.padding(.horizontal)
             }
         }
+    }
+}
+
+struct PopularRestaurantsView_Previews: PreviewProvider {
+    static var previews: some View {
+        PopularRestaurantsView()
+        DiscoverView()
     }
 }
