@@ -11,6 +11,8 @@
 		4706B7132AFA65EF004D5330 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4706B7122AFA65EF004D5330 /* Restaurant.swift */; };
 		4706B7152AFA660B004D5330 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4706B7142AFA660B004D5330 /* User.swift */; };
 		4706B7172AFA661F004D5330 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4706B7162AFA661F004D5330 /* Category.swift */; };
+		4728BD652B08D6D50065EF29 /* CategoryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728BD642B08D6D50065EF29 /* CategoryDetailViewModel.swift */; };
+		4728BD682B08D97A0065EF29 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728BD672B08D97A0065EF29 /* ActivityIndicatorView.swift */; };
 		47887ADD2AF60EDE007DE365 /* PopularDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47887ADC2AF60EDE007DE365 /* PopularDestinationView.swift */; };
 		47887ADF2AF60F12007DE365 /* DiscoverCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47887ADE2AF60F12007DE365 /* DiscoverCategoriesView.swift */; };
 		47887AE12AF60F3F007DE365 /* PopularRestaurantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47887AE02AF60F3F007DE365 /* PopularRestaurantsView.swift */; };
@@ -20,6 +22,9 @@
 		47A79BDB2AF604420045025F /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A79BDA2AF604420045025F /* DiscoverView.swift */; };
 		47A79BDD2AF604430045025F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47A79BDC2AF604420045025F /* Assets.xcassets */; };
 		47A79BE02AF604430045025F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47A79BDF2AF604430045025F /* Preview Assets.xcassets */; };
+		47C2E7672B14C9D40044D5E0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 47C2E7662B14C9D40044D5E0 /* Kingfisher */; };
+		47C2E76A2B14CA260044D5E0 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 47C2E7692B14CA260044D5E0 /* SDWebImageSwiftUI */; };
+		47C2E76C2B14CC520044D5E0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C2E76B2B14CC520044D5E0 /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,8 @@
 		4706B7122AFA65EF004D5330 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		4706B7142AFA660B004D5330 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4706B7162AFA661F004D5330 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4728BD642B08D6D50065EF29 /* CategoryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewModel.swift; sourceTree = "<group>"; };
+		4728BD672B08D97A0065EF29 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		47887ADC2AF60EDE007DE365 /* PopularDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDestinationView.swift; sourceTree = "<group>"; };
 		47887ADE2AF60F12007DE365 /* DiscoverCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCategoriesView.swift; sourceTree = "<group>"; };
 		47887AE02AF60F3F007DE365 /* PopularRestaurantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularRestaurantsView.swift; sourceTree = "<group>"; };
@@ -37,6 +44,7 @@
 		47A79BDA2AF604420045025F /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		47A79BDC2AF604420045025F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47A79BDF2AF604430045025F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47C2E76B2B14CC520044D5E0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47C2E76A2B14CA260044D5E0 /* SDWebImageSwiftUI in Frameworks */,
+				47C2E7672B14C9D40044D5E0 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,13 +67,31 @@
 				4706B7122AFA65EF004D5330 /* Restaurant.swift */,
 				4706B7142AFA660B004D5330 /* User.swift */,
 				4706B7162AFA661F004D5330 /* Category.swift */,
+				47C2E76B2B14CC520044D5E0 /* Place.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4728BD632B08D6C20065EF29 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4728BD642B08D6D50065EF29 /* CategoryDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4728BD662B08D9600065EF29 /* SharedView */ = {
+			isa = PBXGroup;
+			children = (
+				4728BD672B08D97A0065EF29 /* ActivityIndicatorView.swift */,
+			);
+			path = SharedView;
 			sourceTree = "<group>";
 		};
 		47887ADA2AF60E95007DE365 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				4728BD632B08D6C20065EF29 /* ViewModel */,
 				47A79BDA2AF604420045025F /* DiscoverView.swift */,
 				47887ADC2AF60EDE007DE365 /* PopularDestinationView.swift */,
 				47887AE02AF60F3F007DE365 /* PopularRestaurantsView.swift */,
@@ -100,6 +128,7 @@
 		47A79BD72AF604420045025F /* SwiftUITravelApp */ = {
 			isa = PBXGroup;
 			children = (
+				4728BD662B08D9600065EF29 /* SharedView */,
 				47982FAB2AFA6BDE002BD50A /* Utils */,
 				4706B70F2AFA6570004D5330 /* Models */,
 				47887ADA2AF60E95007DE365 /* Discover */,
@@ -134,6 +163,10 @@
 			dependencies = (
 			);
 			name = SwiftUITravelApp;
+			packageProductDependencies = (
+				47C2E7662B14C9D40044D5E0 /* Kingfisher */,
+				47C2E7692B14CA260044D5E0 /* SDWebImageSwiftUI */,
+			);
 			productName = SwiftUITravelApp;
 			productReference = 47A79BD52AF604420045025F /* SwiftUITravelApp.app */;
 			productType = "com.apple.product-type.application";
@@ -162,6 +195,10 @@
 				Base,
 			);
 			mainGroup = 47A79BCC2AF604420045025F;
+			packageReferences = (
+				47C2E7652B14C9D40044D5E0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				47C2E7682B14CA260044D5E0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 47A79BD62AF604420045025F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,11 +230,14 @@
 				4706B7172AFA661F004D5330 /* Category.swift in Sources */,
 				47887AE32AF60FBD007DE365 /* TrendingCreators.swift in Sources */,
 				47A79BDB2AF604420045025F /* DiscoverView.swift in Sources */,
+				47C2E76C2B14CC520044D5E0 /* Place.swift in Sources */,
 				47A79BD92AF604420045025F /* SwiftUITravelAppApp.swift in Sources */,
 				4706B7132AFA65EF004D5330 /* Restaurant.swift in Sources */,
 				4706B7152AFA660B004D5330 /* User.swift in Sources */,
 				47887ADD2AF60EDE007DE365 /* PopularDestinationView.swift in Sources */,
+				4728BD652B08D6D50065EF29 /* CategoryDetailViewModel.swift in Sources */,
 				47887ADF2AF60F12007DE365 /* DiscoverCategoriesView.swift in Sources */,
+				4728BD682B08D97A0065EF29 /* ActivityIndicatorView.swift in Sources */,
 				4706B7112AFA65D7004D5330 /* Destination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +439,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47C2E7652B14C9D40044D5E0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		47C2E7682B14CA260044D5E0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47C2E7662B14C9D40044D5E0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C2E7652B14C9D40044D5E0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		47C2E7692B14CA260044D5E0 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C2E7682B14CA260044D5E0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 47A79BCD2AF604420045025F /* Project object */;
 }
